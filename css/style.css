@@ -1,0 +1,186 @@
+/* CSS Variables */
+@import url(./variables.css);
+
+/* Global CSS */
+@import url(./global.css);
+
+/* Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body{
+  color: #2D383A;
+}
+
+/* -------------------------------- Particles ------------------------------- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #C8C8CD;
+  position: fixed;
+  z-index: -10;
+}
+.paragraph {
+  background:#C8C8CD;
+  color: #2D383A;
+}
+
+/* ------------------------------ End Particles ----------------------------- */
+
+/* ------------------------------- Scroll Bar ------------------------------- */
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--gradient-colour);
+}
+
+/* ----------------------------- End Scroll Bar ----------------------------- */
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav-link {
+    height: 4rem;
+  }
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 13rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg {
+    margin-left: 9.5rem;
+  }
+
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
+}
+
+
+
+
+/* Banner Area */
+.row {
+  display: flex;
+}
+
+.site-main .site-banner .site-title h3 {
+  padding-top: 15%;
+  font-weight: 500;
+  align-items: center;
+
+}
+
+.site-main .site-banner .site-title h3::after {
+  height: 2px;
+  width: 10rem;
+  background: black;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.site-main .site-banner .site-title h4 {
+  font-size: 2rem;
+}
+.site-main .site-banner .banner-image > img {
+  /* padding: 3rem 0; */
+  /* width: 90rem; */
+  display: block;
+  /*max-width: 50%;*/
+  margin: auto;
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.205);
+  margin-bottom: 50px;
+  padding: 5px;
+  background: var(--gradient-colour);
+}
+.class-img{
+  display: block;
+  max-width: 70%;
+  margin: auto;
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.205);
+  margin-bottom: 50px;
+  padding: 5px;
+  background: var(--gradient-colour);
+}
+
+.site-title {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  .site-title {
+    order: 2;
+  }
+
+  .banner-image {
+    order: 1;
+    padding-top: 1rem;
+  }
+
+  .banner-image > img {
+    margin-top: 30px !important;
+  }
+
+  .header-area .main-menu .navbar .navbar-brand {
+    padding: 1rem;
+  }
+
+  .header-area .main-menu .navbar {
+    padding: 1rem 1rem;
+  }
+
+  .site-main .site-banner .site-title h3::after {
+    width: 32vw;
+  }
+}
+
+/* End Banner Area */
+
+/* footer */
+footer > div {
+  height: 5rem;
+  width: 100%;
+}
