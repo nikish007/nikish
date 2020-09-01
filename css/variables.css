@@ -19,14 +19,15 @@ main{
   --primary-colour: #4458dc;
   --primary-colour2: #854fee;
   --title-colour: #141313;
-  --text-colour: #000000;
+  --text-colour: #777777;
   --border-colour: #201f1f17;
-  /*--gradient-colour: linear-gradient(45deg, #1560BD 30%, #2E2D88 70%);*/
-  --gradient-colour: linear-gradient(45deg,#922F8D 30%, #170C6A 70%);
+  /*--gradient-colour: linear-gradient(45deg, #1560BD 30%, #2E2D88 70%);
+  --gradient-colour: linear-gradient(45deg,#922F8D 30%, #170C6A 70%);*/
+  --gradient-colour: linear-gradient(45deg,#00c2ba 30%, #00207f 70%);
   /* --gradient-colour: linear-gradient(45deg, red, blue); */
   --shadow-colour: 0px 10px 30px rgba(118, 85, 225, 0.3);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
   /* font family variable */
-  --roboto: "Roboto", cursive;
+  --roboto: "Georgia, serif";
 }
